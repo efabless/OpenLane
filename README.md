@@ -1,12 +1,13 @@
-      ___   ____   ___  ____   _       ____  ____     ___
-     /   \ |    \ /  _]|    \ | |     /    ||    \   /  _]
-    |     ||  o  )  [_ |  _  || |    |  o  ||  _  | /  [_
-    |  O  ||   _/    _]|  |  || |___ |     ||  |  ||    _]
-    |     ||  | |   [_ |  |  ||     ||  _  ||  |  ||   [_
-     \___/ |__| |_____||__|__||_____||__|__||__|__||_____|
+### Migration Notice
+
+This is a time-frozen version of OpenLane intended for use with OpenMPW 2.
+
+For a later version with more features and bugfixes, visit https://github.com/The-OpenROAD-Projects/OpenLane.
+
+---
 
 # OpenLANE
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fefabless%2Fopenlane.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fefabless%2Fopenlane?ref=badge_shield) [![Documentation Status](https://readthedocs.org/projects/openlane/badge/?version=master)](https://openlane.readthedocs.io/en/master/?badge=master) ![CI](https://github.com/efabless/openlane/workflows/CI/badge.svg?branch=main)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 This documentation is also available at ReadTheDocs [here](https://openlane.readthedocs.io/).
 

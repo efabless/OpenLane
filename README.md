@@ -165,7 +165,7 @@ The following are arguments that can be passed to `flow.tcl`
 | `-run_path <path>`  <br>(Optional) | Specifies a `path` to save the run in. By default the run is in `design_path/`, where the design path is the one passed to `-design` |
 | `-src <verilog_source_file>`  <br>(Optional) | Sets the verilog source code file(s) in case of using `-init\_design\_config`.  <br>The default is that the source code files are under `design_path/src/`, where the design path is the one passed to `-design` |
 | `-init_design_config`  <br>(Optional) | Creates a tcl configuration file for a design. `-tag <name>` can be added to rename the config file to `<name>.tcl` |
-| `-overwrite`  <br>(Optional) | Flag to overwirte an existing run with the same tag |
+| `-overwrite`  <br>(Optional) | Flag to overwrite an existing run with the same tag |
 | `-interactive`  <br>(Optional) | Flag to run openlane flow in interactive mode |
 | `-file <file_path>`  <br>(Optional) | Passes a script of interactive commands in interactive mode |
 | `-synth_explore`  <br>(Boolean) | If enabled, synthesis exploration will be run (only synthesis exploration), which will try out the available synthesis strategies against the input design. The output will be the four possible gate level netlists under &lt;run_path/results/synthesis&gt; and a summary report under reports that compares the 4 outputs. |
@@ -206,7 +206,7 @@ OpenLane flow consists of several stages. By default all flow steps are run in s
 3. **Placement**
     1. `RePLace` - Performs global placement
     2. `Resizer` - Performs optional optimizations on the design
-    3. `OpenDP` - Perfroms detailed placement to legalize the globally placed components
+    3. `OpenDP` - Performs detailed placement to legalize the globally placed components
 4. **CTS**
     1. `TritonCTS` - Synthesizes the clock distribution network (the clock tree)
 5. **Routing**
@@ -306,7 +306,7 @@ A list of all available variables can be found [here][17].
 
 # Regression And Design Configurations Exploration
 
-As mentioned earlier, everytime a new design or a new (PDK,STD_CELL_LIBRARY) pair is added, or any update happens in the flow tools, a re-configuration for the designs is needed. The reconfiguration is methodical and so an exploration script was developed to aid the designer in reconfiguring his designs if needed.
+As mentioned earlier, every time a new design or a new (PDK,STD_CELL_LIBRARY) pair is added, or any update happens in the flow tools, a re-configuration for the designs is needed. The reconfiguration is methodical and so an exploration script was developed to aid the designer in reconfiguring his designs if needed.
 As explained [here](#adding-a-design) that each design has multiple configuration files for each (PDK,STD_CELL_LIBRARY) pair.
 
 OpenLane provides `run_designs.py`, a script that can do multiple runs in a parallel using different configurations. A run consists of a set of designs and a configuration file that contains the configuration values. It is useful to explore the design implementation using different configurations to figure out the best one(s).
